@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-gray-800;
+}
+
+.section-padding {
+  @apply py-16 px-4 sm:px-6 lg:px-8;
+}
+
+.btn-primary {
+  @apply bg-primary text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-all duration-300 relative;
+}
+
+.btn-secondary {
+  @apply bg-transparent px-6 py-2 rounded-lg transition-all duration-300 relative;
+}
+
+.nav-link {
+  @apply cursor-pointer hover:text-primary transition-colors relative;
+}
+
+.bg-grid-pattern {
+  background-image: radial-gradient(circle at 1px 1px, #2563eb 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+@keyframes blink {
+  0%, 90%, 100% { transform: scaleY(1); }
+  95% { transform: scaleY(0); }
+}
+
+.animate-blink {
+  animation: blink 4s infinite;
+}
+
+@keyframes look {
+  0%, 100% { transform: translate(-50%, -50%); }
+  25% { transform: translate(-30%, -50%); }
+  75% { transform: translate(-70%, -50%); }
+}
+
+.animate-look {
+  animation: look 6s ease-in-out infinite;
+}
+
+@keyframes smile {
+  0%, 100% { transform: scaleX(1); }
+  50% { transform: scaleX(1.1) scaleY(0.9); }
+}
+
+.animate-smile {
+  animation: smile 3s ease-in-out infinite;
+}
+
+@keyframes typing {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50px); }
+}
+
+.animate-typing {
+  animation: typing 3s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(10px, -10px) rotate(5deg); }
+  50% { transform: translate(0, -15px) rotate(-5deg); }
+  75% { transform: translate(-10px, -5px) rotate(3deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+@keyframes scale {
+  0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
+
+.animate-scale {
+  animation: scale 1s ease-out forwards;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+/* Add smooth hover transitions for cards */
+.card-hover {
+  transition: all 0.3s;
+  transform: translateY(0);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Glass effect for elements */
+.glass-effect {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f3f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(37, 99, 235, 0.6);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(37, 99, 235, 0.8);
+}
