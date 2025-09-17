@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const roles = ['MCA Student', 'AI Intern', 'Web Developer'];
+  const roles = ['MCA Student','Web Developer',AI Enthusiastic];
   const [currentRole, setCurrentRole] = useState(0);
 
   useEffect(() => {
