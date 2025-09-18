@@ -9,7 +9,7 @@ const Experience = () => {
             <div className="text-gray-500">
               <span>Anve AI, IIT Kanpur</span>
               <span className="mx-2">|</span>
-              <span>Feb 2025 - July 2025</span>
+              <span>Feb 2025 - Sept 2025</span>
             </div>
           </div>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
